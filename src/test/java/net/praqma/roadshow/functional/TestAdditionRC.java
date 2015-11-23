@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestAdditionRC {
-	private Selenium selenium;
+    private Selenium selenium;
     // These are set by the project configuration in build.gradle, so not checking for existense
     private static final String TOMCAT_URL_AND_PORT = System.getProperty("tomcatUrlAndPort");
     private static final String DEPLOY_PATH = System.getProperty("deployPath");
