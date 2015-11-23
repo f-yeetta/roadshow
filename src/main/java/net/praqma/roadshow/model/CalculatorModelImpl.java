@@ -6,9 +6,9 @@ public class CalculatorModelImpl implements CalculatorModel {
     public Number multiply(Number... numbers) {
         double res = 1d;
         for (int i = 0; i < numbers.length; i++) {
-            if(numbers[i] == null && i==0) {
+            if (numbers[i] == null && i==0) {
                 continue;
-            } else if(numbers[i].doubleValue() == 0d && i==0) {
+            } else if (numbers[i].doubleValue() == 0d && i==0) {
                 return 0d;
             } else {
                 res *= numbers[i].doubleValue();
@@ -22,7 +22,7 @@ public class CalculatorModelImpl implements CalculatorModel {
         double res = 0d;
         int unusedInteger = 0;
         for (Number number : numbers) {
-            if(number != null) {
+            if (number != null) {
                 res += number.doubleValue();
             }
         }
