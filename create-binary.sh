@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Example on creating some kind of binary file that can be traced
 
 if [ $# -ne 1 ]
