@@ -18,7 +18,7 @@ import net.praqma.roadshow.model.CalculatorModelImpl;
 @WebServlet(urlPatterns = {"/Calculator"}, description = "This is a small Calculator App used for our roadshow", displayName = "Calulator Demo", name = "Calculator")
 public class Calculator extends HttpServlet implements Serializable{
 
-    //FIXME
+    //TODO
     //private static final long serialVersionUID = 1L;
     private static final CalculatorModel model = new CalculatorModelImpl();
 
@@ -29,12 +29,14 @@ public class Calculator extends HttpServlet implements Serializable{
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws 
+      ServletException, IOException {
         doGet(request, response);
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
+      ServletException, IOException {
         String valueString = request.getParameter("value");
         String resultString = request.getParameter("result");
 
