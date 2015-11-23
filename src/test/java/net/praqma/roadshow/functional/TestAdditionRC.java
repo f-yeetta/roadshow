@@ -22,7 +22,7 @@ public class TestAdditionRC {
         System.out.println("*** Deploy url (where '/Calculator' is found: " + DEPLOY_PATH);
         System.out.println("*** Selenium server:" + SELENIUM_HOSTNAME);
         System.out.println("*** Selenium port:" + SELENIUM_PORT);
-	selenium = new DefaultSelenium(SELENIUM_HOSTNAME,Integer.parseInt(SELENIUM_PORT) ,"*firefox", TOMCAT_URL_AND_PORT);
+	selenium = new DefaultSelenium(SELENIUM_HOSTNAME, Integer.parseInt(SELENIUM_PORT), "*firefox", TOMCAT_URL_AND_PORT);
     selenium.start();
 	}
 
